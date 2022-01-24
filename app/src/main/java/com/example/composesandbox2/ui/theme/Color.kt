@@ -10,3 +10,5 @@ val BlackRichFogra = Color(0xFF0D1321)
 val WhiteBabyPowder = Color(0xFFFAFDF6)
 val RedCrayola = Color(0xFFF1064C)
 val DarkRed = Color(0xFFB60208)
+val DarkWhite = Color(0xFFFCFFF7)
+

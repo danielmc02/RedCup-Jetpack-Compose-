@@ -35,12 +35,12 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Main(){
     Column(modifier = Modifier.fillMaxSize(), verticalArrangement = Arrangement.Bottom){
-        Surface(color = MaterialTheme.colors.primary, modifier = Modifier
+        Surface(color = MaterialTheme.colors.background, modifier = Modifier
             .fillMaxWidth()
             .weight(3f)){
 
         }
-        Surface(color = MaterialTheme.colors.primaryVariant, modifier = Modifier
+        Surface(color = MaterialTheme.colors.primary, modifier = Modifier
             .fillMaxWidth()
             .weight(0.25f)){
 
