@@ -5,20 +5,21 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.Color
 
-private val DarkColorPalette = darkColors(
-    primary = DarkWhite,
+private val DarkColors = darkColors(
+    primary = DarkRedCrayola,
     primaryVariant = RedCrayola,
-    secondary = Teal200,
+    secondary = RedCrayola,
     background = BlackRichFogra
 )
 
-private val LightColorPalette = lightColors(
+private val LightColors = lightColors(
     primary = RedCrayola,
-    primaryVariant = RedCrayola,
-    secondary = Teal200,
-    background = WhiteBabyPowder
-
+    primaryVariant = DarkRedCrayola,
+    secondary = Purple200,
+    background = WhiteBabyPowder,
+    onBackground = RedCrayola
     /* Other default colors to override
     background = Color.White,
     surface = Color.White,
@@ -35,14 +36,13 @@ fun ComposeSandbox2Theme(
     content: @Composable() () -> Unit
 ) {
     val colors = if (darkTheme) {
-        DarkColorPalette
+        DarkColors
     } else {
-        LightColorPalette
+        LightColors
     }
 
     MaterialTheme(
-        colors = if (darkTheme) DarkColorPalette else
-             LightColorPalette,
+        colors = if (darkTheme) DarkColors else LightColors,
         typography = Typography,
         shapes = Shapes,
         content = content

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ComposeSandbox2</string>
+    <string name="intro">Hello User!</string>
+
 </resources>
