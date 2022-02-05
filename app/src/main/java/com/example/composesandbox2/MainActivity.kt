@@ -2,6 +2,7 @@ package com.example.composesandbox2
 
 import android.content.res.Configuration.UI_MODE_NIGHT_NO
 import android.content.res.Configuration.UI_MODE_NIGHT_YES
+import android.icu.text.CaseMap
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -38,7 +39,7 @@ class MainActivity : ComponentActivity() {
 
 
 
-@Preview(uiMode = UI_MODE_NIGHT_NO, showBackground = true,)
+@Preview(uiMode = UI_MODE_NIGHT_YES, showBackground = true)
 @Composable
 fun Test() {
     ComposeSandbox2Theme {
@@ -46,10 +47,24 @@ fun Test() {
         .fillMaxSize()
         .background(MaterialTheme.colors.background)
         ){
-        Text( text = stringResource(id = R.string.intro), modifier = Modifier
-            .background(Color.Transparent)
-            .padding(25.dp), fontSize = 40.sp, color = MaterialTheme.colors.onBackground
+        Column(modifier = Modifier
+            .weight(.8f)
+            .fillMaxWidth(),
+        verticalArrangement = Arrangement.Top,
+        horizontalAlignment = Alignment.Start){
+            Text(text = stringResource(id = R.string.intro),
+                color = MaterialTheme.colors.onBackground,
+                fontSize = MaterialTheme.typography.h1.fontSize
             )
+        }
+        Column(modifier = Modifier
+            .weight(.2f)
+            .background(Color.Green)
+            .fillMaxWidth(),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally){
+            Text(text = "Sign In", color = MaterialTheme.colors.onBackground)
+        }
     }
     }
 }

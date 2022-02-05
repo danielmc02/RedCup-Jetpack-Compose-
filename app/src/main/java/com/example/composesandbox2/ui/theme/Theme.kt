@@ -11,7 +11,8 @@ private val DarkColors = darkColors(
     primary = DarkRedCrayola,
     primaryVariant = RedCrayola,
     secondary = RedCrayola,
-    background = BlackRichFogra
+    background = BlackRichFogra,
+    onBackground = WhiteBabyPowder
 )
 
 private val LightColors = lightColors(
