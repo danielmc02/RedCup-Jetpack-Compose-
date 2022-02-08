@@ -17,17 +17,16 @@ import androidx.compose.ui.unit.sp
 
 
 @Composable
-fun GoogleSignInButton(){
-        val MyAppIcons = Icons.Filled
+fun GoogleSignInButton(){ val MyAppIcons = Icons.Filled
 Button(onClick = { /*TODO*/ },
         modifier = Modifier
-            .background(MaterialTheme.colors.onBackground)
+            .background(MaterialTheme.colors.primary)
             .width(200.dp)
             .height(50.dp),
-shape = RoundedCornerShape(5.dp)) {
+        shape = CutCornerShape(20.dp)) {
     Icon( MyAppIcons.Person, contentDescription = "Sign-In Icon")
     Spacer(Modifier.size(ButtonDefaults.IconSpacing))
-    Text(text = "Sign In", fontSize = 27.sp)
+    Text(text = "Sign In", fontSize = 27.sp, color = MaterialTheme.colors.onPrimary)
 }
 
 }

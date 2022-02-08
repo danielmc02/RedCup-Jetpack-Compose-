@@ -66,7 +66,7 @@ fun Test() {
         }
         Column(modifier = Modifier
             .weight(.2f)
-            .background(Color.Green)
+            //.background(Color.Green)
             .fillMaxWidth(),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally){
