@@ -1,40 +1,19 @@
 package com.example.composesandbox2
 
-import android.content.res.Configuration.UI_MODE_NIGHT_NO
-import android.content.res.Configuration.UI_MODE_NIGHT_YES
-import android.icu.text.CaseMap
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.annotation.StringRes
-import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.shape.CutCornerShape
-import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.*
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Share
-import androidx.compose.material.icons.filled.ShoppingCart
-import androidx.compose.material.icons.twotone.Search
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
-import androidx.compose.ui.focus.focusModifier
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import com.example.composesandbox2.ui.theme.ComposeSandbox2Theme
-import com.example.composesandbox2.ui.theme.GoogleSignInButton
 
 class MainActivity : ComponentActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             ComposeSandbox2Theme{
-                Test()
+                ScreenMain()
+
             }
         }
 
@@ -43,36 +22,3 @@ class MainActivity : ComponentActivity() {
 }
 
 
-
-@Preview(uiMode = UI_MODE_NIGHT_YES, showBackground = true)
-@Composable
-fun Test() {
-    ComposeSandbox2Theme {
-    Column(modifier = Modifier
-        .fillMaxSize()
-        .background(MaterialTheme.colors.background)
-        ){
-        Column(modifier = Modifier
-            .weight(.8f)
-            .fillMaxWidth(),
-        verticalArrangement = Arrangement.Top,
-        horizontalAlignment = Alignment.Start){
-            Text(text = stringResource(id = R.string.intro),
-                color = MaterialTheme.colors.onBackground,
-                fontSize = MaterialTheme.typography.h3.fontSize,
-                modifier = Modifier
-                    .padding(25.dp,50.dp)
-            )
-        }
-        Column(modifier = Modifier
-            .weight(.2f)
-            //.background(Color.Green)
-            .fillMaxWidth(),
-        verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally){
-            GoogleSignInButton()
-
-        }
-    }
-    }
-}
