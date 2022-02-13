@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "727948982605",
+    "project_id": "hotcup-b23d1",
+    "storage_bucket": "hotcup-b23d1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727948982605:android:ed79a472b90ffa7abbdf04",
+        "android_client_info": {
+          "package_name": "com.example.composesandbox2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "727948982605-aektuou4tu2udqplclv6qllgtge19ogi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.composesandbox2",
+            "certificate_hash": "6ed838bbad8d52de668ac297d7332298c900bcd6"
+          }
+        },
+        {
+          "client_id": "727948982605-itak0svf0p42gqio92hlvt1gt22pmoe4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2HyS1vWSSjk5hnpYRCryViRaJWVu_YbE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "727948982605-itak0svf0p42gqio92hlvt1gt22pmoe4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
